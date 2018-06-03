@@ -1,0 +1,24 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+  <main role="main">
+
+    <f:render partial="Jumbotron" />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
+        </div>
+        <div class="col-md-4">
+          <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        </div>
+        <div class="col-md-4">
+          <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '2'}" />
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</f:section>
