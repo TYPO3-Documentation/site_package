@@ -1,0 +1,15 @@
+*.bak
+*.idea
+*.project
+*.swp
+*GENERATED*
+*NOT_VERSIONED*
+*~
+._*
+.DS_Store
+.DS_Store?
+.env
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
