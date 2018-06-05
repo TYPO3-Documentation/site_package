@@ -16,4 +16,5 @@ implementing websites, this approach is a very flexible and
 professional way.
 
 :Repository:      https://github.com/TYPO3-Documentation/site_package/
-:TYPO3 Tutorial:  https://docs.typo3.org/typo3cms/SitePackage/
+:Belongs to:      https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage
+:Published at:    https://docs.typo3.org/typo3cms/SitePackageTutorial/
