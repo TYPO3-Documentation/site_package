@@ -3,7 +3,7 @@ TYPO3 Site Package Extension
 ============================
 
 This TYPO3 Site Package Extension is the end result of the `TYPO3 Site
-Package Tutorial <https://docs.typo3.org/typo3cms/SitePackageTutorial/>`__,
+Package Tutorial <https://docs.typo3.org/m/typo3/tutorial-sitepackage/master/en-us/>`__,
 written by Michael Schams and published by the TYPO3 Documentation
 Team.
 
@@ -18,4 +18,4 @@ professional way.
 
 :Repository:      https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code
 :Belongs to:      https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage
-:Published at:    https://docs.typo3.org/typo3cms/SitePackageTutorial/
+:Published at:    https://docs.typo3.org/m/typo3/tutorial-sitepackage/8.7/en-us
