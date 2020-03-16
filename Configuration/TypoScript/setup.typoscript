@@ -83,9 +83,6 @@ config {
   sendCacheHeaders = 1
   uniqueLinkVars = 1
 
-  // Disable image upscaling
-  noScaleUp = 1
-
   // Compression and concatenation of CSS and JS Files
   compressCss = 0
   compressJs = 0
