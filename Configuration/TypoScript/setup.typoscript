@@ -1,5 +1,5 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_package/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Setup/*.typoscript'
 
 page = PAGE
 page {
@@ -9,28 +9,37 @@ page {
   10 = FLUIDTEMPLATE
   10 {
     templateName = TEXT
-    templateName.stdWrap.cObject = CASE
-    templateName.stdWrap.cObject {
-      key.data = pagelayout
+    templateName {
+      cObject = TEXT
+      cObject {
+        data = pagelayout
+        required = 1
+        case = ucfirst
+        split {
+          token = pagets__
+          cObjNum = 1
+          1.current = 1
+        }
+      }
 
-      pagets__site_package_default = TEXT
-      pagets__site_package_default.value = Default
-
-      default = TEXT
-      default.value = Default
+      ifEmpty = Default
     }
+
     templateRootPaths {
       0 = EXT:site_package/Resources/Private/Templates/Page/
       1 = {$page.fluidtemplate.templateRootPath}
     }
+
     partialRootPaths {
       0 = EXT:site_package/Resources/Private/Partials/Page/
       1 = {$page.fluidtemplate.partialRootPath}
     }
+
     layoutRootPaths {
       0 = EXT:site_package/Resources/Private/Layouts/Page/
       1 = {$page.fluidtemplate.layoutRootPath}
     }
+
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       10 {
