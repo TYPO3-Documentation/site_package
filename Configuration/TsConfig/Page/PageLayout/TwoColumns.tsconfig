@@ -4,7 +4,7 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 2
-                rowCount = 3
+                rowCount = 2
                 rows {
                     1 {
                         columns {
@@ -24,15 +24,6 @@ mod.web_layout.BackendLayouts {
                             2 {
                                 name = Sidebar
                                 colPos = 2
-                            }
-                        }
-                    }
-                    3 {
-                        columns {
-                            1 {
-                                name = Footer
-                                colspan = 2
-                                colPos = 3
                             }
                         }
                     }

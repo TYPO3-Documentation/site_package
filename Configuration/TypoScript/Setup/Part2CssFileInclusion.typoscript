@@ -1,0 +1,20 @@
+
+page {
+  // Part 2: CSS file inclusion
+  includeCSS {
+    bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+    bootstrap.external = 1
+    website = EXT:site_package/Resources/Public/Css/website.css
+  }
+
+  // Part 3: JavaScript file inclusion
+  includeJSFooter {
+    jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
+    jquery.external = 1
+    popper = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
+    popper.external = 1
+    bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+    bootstrap.external = 1
+    website = EXT:site_package/Resources/Public/JavaScript/website.js
+  }
+}
