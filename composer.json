@@ -1,0 +1,32 @@
+{
+	"name": "typo3/site-package",
+	"type": "typo3-cms-extension",
+	"description": "Example site package from the site package tutorial",
+	"authors": [
+		{
+			"name": "TYPO3 CMS Documentation Team",
+			"role": "Developer",
+			"homepage": "https://typo3.org/community/teams/documentation"
+		},
+		{
+			"name": "The TYPO3 Community",
+			"role": "Contributor",
+			"homepage": "https://typo3.org/community/"
+		}
+	],
+	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
+	"license": "MIT",
+	"keywords": [
+		"typo3",
+		"site package",
+		"documentation"
+	],
+	"support": {
+		"issues": "https://github.com/TYPO3-Documentation/t3docs-screenshots/issues"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "site_package"
+		}
+	}
+}

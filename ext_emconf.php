@@ -18,15 +18,15 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'TYPO3 Site Package',
     'description' => 'TYPO3 Site Package',
     'category' => 'templates',
-    'author' => 'Firstname Lastname',
-    'author_email' => 'username@example.com',
+    'author' => 'TYPO3 Documentation Team',
+    'author_email' => 'documentation@typo3.org',
     'author_company' => 'Example Company',
     'version' => '1.0.0',
     'state' => 'stable',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-8.7.99',
-            'fluid_styled_content' => '8.7.0-8.7.99'
+            'typo3' => '11.4.0-11.5.99',
+            'fluid_styled_content' => '11.4.0-11.5.99'
         ],
         'conflicts' => [
         ],
