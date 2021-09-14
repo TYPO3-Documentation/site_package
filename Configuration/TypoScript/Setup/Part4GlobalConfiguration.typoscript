@@ -1,29 +1,9 @@
 // Part 4: global site configuration
 config {
-  absRefPrefix = auto
-  cache_period = 86400
-  debug = 0
-  disablePrefixComment = 1
-  doctype = html5
-  extTarget =
-  index_enable = 1
-  index_externals = 1
-  index_metatags = 1
-  inlineStyle2TempFile = 1
-  intTarget =
-  linkVars = L
-  metaCharset = utf-8
-  no_cache = 0
-  pageTitleFirst = 1
-  prefixLocalAnchors = all
-  removeDefaultJS = 0
-  renderCharset = utf-8
-  sendCacheHeaders = 1
-  uniqueLinkVars = 1
-
-  // Compression and concatenation of CSS and JS Files
-  compressCss = 0
-  compressJs = 0
-  concatenateCss = 0
-  concatenateJs = 0
+  # Adjust the title tag to be displayed as “website - page title”
+  pageTitleSeparator = -
+  pageTitleSeparator.noTrimWrap = | | |
+  
+  # Display the Admin Panel at the bottom of pages to logged in backend users
+  admPanel = 1
 }
