@@ -12,14 +12,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <f:for each="{mainnavigation}" as="mainnavigationItem">
-        <li class="nav-item {f:if(condition: mainnavigationItem.active, then:'active')}">
+      <f:for each="{mainNavigation}" as="mainNavigationItem">
+        <li class="nav-item {f:if(condition: mainNavigationItem.active, then:'active')}">
           <a class="nav-link"
-             href="{mainnavigationItem.link}"
-             target="{mainnavigationItem.target}"
-             title="{mainnavigationItem.title}"
+             href="{mainNavigationItem.link}"
+             target="{mainNavigationItem.target}"
+             title="{mainNavigationItem.title}"
           >
-          {mainnavigationItem.title}
+          {mainNavigationItem.title}
           </a>
         </li>
       </f:for>
