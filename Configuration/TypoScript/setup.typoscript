@@ -1,9 +1,4 @@
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/Setup/*.typoscript'
 
-page = PAGE
-page {
-  typeNum = 0
-}
-
 
