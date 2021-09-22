@@ -15,8 +15,8 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^11.4 || ^11.5 || dev-master",
-		"typo3/cms-fluid-styled-content": "^11.4 || ^11.5 || dev-master"
+		"typo3/cms-core": "^11.4",
+		"typo3/cms-fluid-styled-content": "^11.4"
 	},
 	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"license": "MIT",
