@@ -14,6 +14,10 @@
 			"homepage": "https://typo3.org/community/"
 		}
 	],
+	"require": {
+		"typo3/cms-core": "^11.4 || ^11.5 || dev-master",
+		"typo3/cms-fluid-styled-content": "^11.4 || ^11.5 || dev-master"
+	},
 	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"license": "MIT",
 	"keywords": [
@@ -22,7 +26,12 @@
 		"documentation"
 	],
 	"support": {
-		"issues": "https://github.com/TYPO3-Documentation/t3docs-screenshots/issues"
+		"issues": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code/issues"
+	},
+	"autoload": {
+		"psr-4": {
+			"T3docs\\SitePackage\\": "Classes/"
+		}
 	},
 	"extra": {
 		"typo3/cms": {
