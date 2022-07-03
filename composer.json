@@ -1,5 +1,5 @@
 {
-	"name": "typo3/site-package",
+	"name": "t3docs/site-package",
 	"type": "typo3-cms-extension",
 	"description": "Example site package from the site package tutorial",
 	"authors": [
