@@ -1,0 +1,26 @@
+
+page {
+  headerData {
+    // https://developers.google.com/search/blog/2011/09/pagination-with-relnext-and-relprev
+    10 = HMENU
+    10 {
+      special = browse
+      special {
+        items = prev|next
+        items.prevnextToSection = 1
+        excludeNoSearchPages = 1
+      }
+      1 = TMENU
+      1.NO {
+        allWrap = <link rel="prev" href="|"> |*| <link rel="next" href="|">
+        doNotLinkIt = 1
+        stdWrap {
+          typolink {
+            parameter.data = field:uid
+            returnLast = url
+          }
+        }
+      }
+    }
+  }
+}

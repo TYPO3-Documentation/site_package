@@ -1,0 +1,18 @@
+// include this breadcrumb menu in your Fluid template:
+// <f:render partial="Page/Navigation/Breadcrumb" arguments="{_all}" />
+
+page {
+  10 = FLUIDTEMPLATE
+  10 {
+    dataProcessing {
+      1657927210 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      1657927210 {
+        special = rootline
+        special.range = 0|-1
+        includeNotInMenu = 0
+        as = breadcrumb
+      }
+    }
+  }
+}
+
