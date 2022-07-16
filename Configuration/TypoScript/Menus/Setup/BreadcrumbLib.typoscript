@@ -1,0 +1,18 @@
+// include this breadcrumb menu in your Fluid template:
+// <f:cObject typoscriptObjectPath="lib.breadcrumb" />
+
+lib.breadcrumb = HMENU
+lib.breadcrumb {
+  wrap = <ul class="breadcrumb">|</ul>
+  special = rootline
+  special.range = 1|-1
+  // render the menu
+  1 = TMENU
+  1 {
+    NO.wrapItemAndSub = <li>|</li>
+    // render the current page without link and with additional classs
+    CUR = 1
+    CUR.doNotLinkIt = 1
+    CUR.wrapItemAndSub = <li class="active">|</li>
+  }
+}

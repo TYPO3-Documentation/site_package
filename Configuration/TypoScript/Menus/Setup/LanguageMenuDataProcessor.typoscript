@@ -1,0 +1,16 @@
+
+// include this breadcrumb menu in your Fluid template:
+// <f:render partial="Page/Navigation/LanguageMenu" arguments="{_all}" />
+
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        dataProcessing {
+            1657962326 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            1657962326 {
+                languages = auto
+                as = languageNavigation
+            }
+        }
+    }
+}
