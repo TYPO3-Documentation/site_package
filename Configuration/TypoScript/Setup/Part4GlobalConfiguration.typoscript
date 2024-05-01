@@ -3,6 +3,7 @@ config {
   # Adjust the title tag to be displayed as “website - page title”
   pageTitleSeparator = -
   pageTitleSeparator.noTrimWrap = | | |
+  contentObjectExceptionHandler = 0
   
   # Display the Admin Panel at the bottom of pages to logged in backend users
   admPanel = 1

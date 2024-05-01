@@ -1,13 +1,7 @@
 page {
-  10 = FLUIDTEMPLATE
+  10 = PAGEVIEW
   10 {
-    templateRootPaths {
-      // ...
-    }
-    partialRootPaths {
-      // ...
-    }
-    layoutRootPaths {
+    paths {
       // ...
     }
 

@@ -1,0 +1,8 @@
+// Part 1: PAGEVIEW section
+page.10 = PAGEVIEW
+page.10 {
+  paths {
+    0 = EXT:site_package/Resources/Private/Templates/
+    10 = {$page.template.path}
+  }
+}
