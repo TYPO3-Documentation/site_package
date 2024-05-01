@@ -35,10 +35,22 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "site_package"
+			"extension-key": "site_package",
+			"web-dir": ".Build/public"
 		},
 		"branch-alias": {
 			"dev-master": "13.0.x-dev"
 		}
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin",
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		}
+	},
+	"require-dev": {
+		"typo3/coding-standards": "^0.5.5"
 	}
 }
