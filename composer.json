@@ -1,56 +1,58 @@
 {
 	"name": "t3docs/site-package",
-	"type": "typo3-cms-extension",
 	"description": "Example site package from the site package tutorial",
-	"authors": [
-		{
-			"name": "TYPO3 CMS Documentation Team",
-			"role": "Developer",
-			"homepage": "https://typo3.org/community/teams/documentation"
-		},
-		{
-			"name": "The TYPO3 Community",
-			"role": "Contributor",
-			"homepage": "https://typo3.org/community/"
-		}
-	],
-	"require": {
-		"typo3/cms-core": "^13.1.0|dev-main",
-		"typo3/cms-fluid-styled-content": "^13.1.0|dev-main"
-	},
-	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"license": "MIT",
+	"type": "typo3-cms-extension",
 	"keywords": [
 		"typo3",
 		"site package",
 		"documentation"
 	],
+	"authors": [
+		{
+			"name": "TYPO3 CMS Documentation Team",
+			"homepage": "https://typo3.org/community/teams/documentation",
+			"role": "Developer"
+		},
+		{
+			"name": "The TYPO3 Community",
+			"homepage": "https://typo3.org/community/",
+			"role": "Contributor"
+		}
+	],
+	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"support": {
 		"issues": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code/issues"
+	},
+	"require": {
+		"typo3/cms-core": "^13.1.0 || dev-main",
+		"typo3/cms-fluid-styled-content": "^13.1.0 || dev-main"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2.42",
+		"typo3/coding-standards": "^0.5.5"
 	},
 	"autoload": {
 		"psr-4": {
 			"T3docs\\SitePackage\\": "Classes/"
 		}
 	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
+		"bin-dir": ".Build/bin",
+		"vendor-dir": ".Build/vendor"
+	},
 	"extra": {
+		"branch-alias": {
+			"dev-master": "13.0.x-dev"
+		},
 		"typo3/cms": {
 			"extension-key": "site_package",
 			"web-dir": ".Build/public"
-		},
-		"branch-alias": {
-			"dev-master": "13.0.x-dev"
 		}
-	},
-	"config": {
-		"vendor-dir": ".Build/vendor",
-		"bin-dir": ".Build/bin",
-		"allow-plugins": {
-			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true
-		}
-	},
-	"require-dev": {
-		"typo3/coding-standards": "^0.5.5"
 	}
 }
