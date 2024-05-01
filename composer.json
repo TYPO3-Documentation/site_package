@@ -15,8 +15,8 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^12.0.0|dev-main",
-		"typo3/cms-fluid-styled-content": "^12.0.0|dev-main"
+		"typo3/cms-core": "^13.1.0|dev-main",
+		"typo3/cms-fluid-styled-content": "^13.1.0|dev-main"
 	},
 	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"license": "MIT",
@@ -38,7 +38,7 @@
 			"extension-key": "site_package"
 		},
 		"branch-alias": {
-			"dev-master": "12.0.x-dev"
+			"dev-master": "13.0.x-dev"
 		}
 	}
 }
