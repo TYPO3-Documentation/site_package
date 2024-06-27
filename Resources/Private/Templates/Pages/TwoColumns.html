@@ -1,24 +1,20 @@
-<f:layout name="Default" />
+<f:layout name="Default"/>
 <f:section name="Main">
 
-  <main role="main">
-      <f:render partial="Jumbotron" arguments="{jumbotronContent: content.jumbotron}"/>
+    <main role="main">
+        <f:render partial="Jumbotron" arguments="{records: content.jumbotron.records}"/>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8">
-            <f:for each="{content.main.records}" as="record">
-                <f:render partial="SingleContent" arguments="{record: record}"/>
-            </f:for>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <f:render partial="Content" arguments="{records: content.main.records}"/>
+                </div>
+                <div class="col-12 col-md-4">
+                    <f:render partial="Content" arguments="{records: content.sidebar.records}"/>
+                </div>
+            </div>
         </div>
-          <div class="col-12 col-md-4">
-              <f:for each="{content.sidebar.records}" as="record">
-                  <f:render partial="SingleContent" arguments="{record: record}"/>
-              </f:for>
-          </div>
-      </div>
-    </div>
 
-  </main>
+    </main>
 
 </f:section>

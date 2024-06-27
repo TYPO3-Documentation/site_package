@@ -4,12 +4,16 @@ page {
     // ...
 
     dataProcessing {
+      # makes content elements available as {content} in Fluid template
       10 = page-content
+      # provides data for the menu rendering
       20 = menu
-      20 {
-        levels = 1
-        includeSpacer = 1
-        as = mainNavigation
+      # provides data for the breadcrumb menu
+      30 = menu
+      30 {
+        special = rootline
+        special.range = 0|-1
+        as = breadcrumb
       }
     }
   }

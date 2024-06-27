@@ -2,19 +2,10 @@
 <f:section name="Main">
 
     <main role="main">
-
-        <f:render partial="Jumbotron" arguments="{jumbotronContent: content.jumbotron}"/>
+        <f:render partial="Jumbotron" arguments="{records: content.jumbotron.records}"/>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <f:for each="{content.main.records}" as="contentElement">
-                        <f:for each="{content.main.records}" as="record">
-                            <f:render partial="SingleContent" arguments="{record: record}"/>
-                        </f:for>
-                    </f:for>
-                </div>
-            </div>
+            <f:render partial="Content" arguments="{records: content.main.records}"/>
         </div>
 
     </main>

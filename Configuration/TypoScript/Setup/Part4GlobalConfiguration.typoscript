@@ -6,7 +6,4 @@ config {
 
   # Display the Admin Panel at the bottom of pages to logged in backend users
   admPanel = 1
-
-  # Display errors withing content elements
-  contentObjectExceptionHandler = 0
 }

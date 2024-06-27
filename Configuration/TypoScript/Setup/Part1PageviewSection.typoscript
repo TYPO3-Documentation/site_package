@@ -5,6 +5,7 @@ page.10 {
     0 = EXT:site_package/Resources/Private/Templates/
     10 = {$mySitepackage.template_path}
   }
+
   dataProcessing {
     # makes content elements available as {content} in Fluid template
     10 = page-content

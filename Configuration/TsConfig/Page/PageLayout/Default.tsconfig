@@ -1,33 +1,34 @@
 mod.web_layout.BackendLayouts {
-    Default {
-        title = Standard
-        icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/default.svg
-        config {
-            backend_layout {
-                colCount = 1
-                rowCount = 3
-                rows {
-                    1 {
-                        columns {
-                            1 {
-                                name = Jumbotron
-                                colPos = 1
-                                identifier = jumbotron
-                                slideMode = slide
-                            }
-                        }
-                    }
-                    2 {
-                        columns {
-                            1 {
-                                name = Main Content
-                                colPos = 0
-                                identifier = main
-                            }
-                        }
-                    }
-                }
+  Default {
+    title = Standard
+    icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/default.svg
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Jumbotron
+                colPos = 1
+                identifier = jumbotron
+                slideMode = slide
+              }
             }
+          }
+
+          2 {
+            columns {
+              1 {
+                name = Main Content
+                colPos = 0
+                identifier = main
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
