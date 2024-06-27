@@ -1,24 +1,22 @@
-<f:layout name="Default" />
+<f:layout name="Default"/>
 <f:section name="Main">
 
-  <main role="main">
+    <main role="main">
 
-    <f:render partial="Jumbotron" arguments="{jumbotronContent: jumbotronContent}"/>
+        <f:render partial="Jumbotron" arguments="{jumbotronContent: content.jumbotron}"/>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-            <f:for each="{mainContent}" as="contentElement">
-                <f:cObject
-                    typoscriptObjectPath="tt_content.{contentElement.data.CType}"
-                    data="{contentElement.data}"
-                    table="tt_content"
-                />
-            </f:for>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <f:for each="{content.main.records}" as="contentElement">
+                        <f:for each="{content.main.records}" as="record">
+                            <f:render partial="SingleContent" arguments="{record: record}"/>
+                        </f:for>
+                    </f:for>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-  </main>
+    </main>
 
 </f:section>

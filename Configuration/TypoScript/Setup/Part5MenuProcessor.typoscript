@@ -1,13 +1,12 @@
 page {
   10 = PAGEVIEW
   10 {
-    paths {
-      // ...
-    }
+    // ...
 
     dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-      10 {
+      10 = page-content
+      20 = menu
+      20 {
         levels = 1
         includeSpacer = 1
         as = mainNavigation

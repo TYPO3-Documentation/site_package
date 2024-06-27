@@ -12,6 +12,8 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Jumbotron
                                 colPos = 1
+                                identifier = jumbotron
+                                slideMode = slide
                             }
                         }
                     }
@@ -20,6 +22,7 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Main Content
                                 colPos = 0
+                                identifier = main
                             }
                         }
                     }

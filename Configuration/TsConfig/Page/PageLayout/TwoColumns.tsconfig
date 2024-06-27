@@ -13,6 +13,8 @@ mod.web_layout.BackendLayouts {
                                 name = Jumbotron
                                 colspan = 2
                                 colPos = 1
+                                identifier = jumbotron
+                                slideMode = slide
                             }
                         }
                     }
@@ -21,10 +23,13 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Main Content
                                 colPos = 0
+                                identifier = main
                             }
                             2 {
                                 name = Sidebar
                                 colPos = 2
+                                identifier = sidebar
+                                slideMode = collectReverse
                             }
                         }
                     }
