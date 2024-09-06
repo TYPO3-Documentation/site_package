@@ -1,6 +1,7 @@
 mod.web_layout.BackendLayouts {
     Default {
         title = Standard
+        icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/default.svg
         config {
             backend_layout {
                 colCount = 1
