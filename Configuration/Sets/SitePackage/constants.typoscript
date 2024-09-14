@@ -1,5 +1,0 @@
-page {
-    template {
-        path = EXT:site_package/Resources/Private/Templates/
-    }
-}
