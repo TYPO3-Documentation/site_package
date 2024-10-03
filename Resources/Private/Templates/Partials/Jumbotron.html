@@ -1,8 +1,8 @@
 <div class="jumbotron">
-    <f:for each="{jumbotronContent}" as="contentElement">
+    <f:for each="{records}" as="record">
         <div class="container">
-            <h1 class="display-3">{contentElement.data.header}</h1>
-            <f:format.html>{contentElement.data.bodytext}</f:format.html>
+            <h1 class="display-3">{record.header}</h1>
+            <f:format.html>{record.bodytext}</f:format.html>
         </div>
     </f:for>
 </div>

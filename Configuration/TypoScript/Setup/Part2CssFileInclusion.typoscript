@@ -1,4 +1,3 @@
-
 page {
   shortcutIcon = {$mySitepackage.favicon}
   // Part 2: CSS file inclusion
