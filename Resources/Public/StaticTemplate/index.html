@@ -1,50 +1,91 @@
-<html>
-    <head>
-        <!--...-->
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button aria-controls="navbarsExampleDefault"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    class="navbar-toggler"
-                    data-target="#navbarsExampleDefault"
-                    data-toggle="collapse"
-                    type="button"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Home
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TYPO3 site package example</title>
 
-        <main role="main">
-            <div class="jumbotron">
+    <link href="../Libaries/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Css/main.css" rel="stylesheet">
+    <body>
+        <main>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
                 <div class="container">
-                    <h1 class="display-3">Hello, world!</h1>
-                    <p> ... </p>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuToggler" aria-controls="menuToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuToggler">
+                        <a href="#" class="navbar-brand">
+                            <img src="../Images/logo.svg" alt="Logo" height="50px" class="pe-3">
+                            Site name
+                        </a>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="p-5 mb-4 bg-body-tertiary">
+                    <div class="container-fluid py-5">
+                        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap.</p>
+                        <button class="btn btn-dark btn-lg" role="button" href="#" id="exampleButton">Example button</button>
+                    </div>
                 </div>
             </div>
             <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary">
+                        <li class="breadcrumb-item">
+                            <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Library</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Data
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h2>Main Content</h2>
-                        <p> ... </p>
+                    <div class="col-md-8">
+                        <div class="h-100 p-5 text-bg-white">
+                            <h2>Page content</h2>
+                            <p>The content of each page can be displayed here. </p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <h2>Sidebar Content</h2>
-                        <p> ... </p>
+                    <div class="col-md-4">
+                        <div class="h-100 p-5 bg-body-tertiary">
+                            <h2>Sidebar </h2>
+                            <p>Place for some shared content</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                            <img src="../Images/logo.svg" alt="Logo" height="24" class="bi">
+                        </a>
+                        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+                    </div>
+
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Data privacy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Imprint</a></li>
+                    </ul>
+                </footer>
+            </div>
         </main>
+        <script src="../Libaries/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../JavaScript/main.js"></script>
     </body>
 </html>

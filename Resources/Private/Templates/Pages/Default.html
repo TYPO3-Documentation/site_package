@@ -1,13 +1,11 @@
-<f:layout name="Default"/>
+<f:layout name="Layout"/>
 <f:section name="Main">
 
-    <main role="main">
-        <f:render partial="Jumbotron" arguments="{records: content.jumbotron.records}"/>
+    <f:render partial="Jumbotron" arguments="{records: content.jumbotron.records}"/>
+    <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
 
-        <div class="container">
-            <f:render partial="Content" arguments="{records: content.main.records}"/>
-        </div>
-
-    </main>
+    <div class="container">
+        <f:render partial="Content" arguments="{records: content.main.records}"/>
+    </div>
 
 </f:section>

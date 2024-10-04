@@ -1,8 +1,11 @@
-<div class="jumbotron">
-    <f:for each="{records}" as="record">
-        <div class="container">
-            <h1 class="display-3">{record.header}</h1>
-            <f:format.html>{record.bodytext}</f:format.html>
+<f:for each="{records}" as="record">
+    <div class="container">
+        <div class="p-5 mb-4 bg-body-tertiary">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">{record.header}</h1>
+                <p class="col-md-8 fs-4"><f:format.stripTags>{record.bodytext}</f:format.stripTags></p>
+                <button class="btn btn-dark btn-lg" role="button" href="#" id="exampleButton">Example button</button>
+            </div>
         </div>
-    </f:for>
-</div>
+    </div>
+</f:for>
