@@ -1,5 +1,5 @@
 mod.web_layout.BackendLayouts {
-  TwoColumns {
+  Subpage {
     title = Two Columns
     icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/twoColumns.svg
     config {
