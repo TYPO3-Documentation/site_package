@@ -2,37 +2,12 @@
 	"name": "t3docs/site-package",
 	"type": "typo3-cms-extension",
 	"description": "Example site package from the site package tutorial",
-	"authors": [
-		{
-			"name": "TYPO3 CMS Documentation Team",
-			"role": "Developer",
-			"homepage": "https://typo3.org/community/teams/documentation"
-		},
-		{
-			"name": "The TYPO3 Community",
-			"role": "Contributor",
-			"homepage": "https://typo3.org/community/"
-		}
-	],
 	"require": {
-		"typo3/cms-core": "^13.1.0|dev-main",
-		"typo3/cms-fluid-styled-content": "^13.1.0|dev-main"
+		"typo3/cms-core": "^13.3|dev-main",
+		"typo3/cms-fluid-styled-content": "^13.3|dev-main"
 	},
 	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"license": "MIT",
-	"keywords": [
-		"typo3",
-		"site package",
-		"documentation"
-	],
-	"support": {
-		"issues": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code/issues"
-	},
-	"autoload": {
-		"psr-4": {
-			"T3docs\\SitePackage\\": "Classes/"
-		}
-	},
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "site_package"

@@ -1,11 +1,9 @@
-<f:for each="{records}" as="record">
-    <div class="container">
-        <div class="p-5 mb-4 bg-body-tertiary">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">{record.header}</h1>
-                <p class="col-md-8 fs-4"><f:format.stripTags>{record.bodytext}</f:format.stripTags></p>
-                <button class="btn btn-dark btn-lg" role="button" href="#" id="exampleButton">Example button</button>
-            </div>
+<div class="container">
+    <div class="p-5 mb-4 bg-body-tertiary">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+            <p class="col-md-8 fs-4">This jumbotron contains a button to demonstrate that JavaScript is working: </p>
+            <button class="btn btn-dark btn-lg" role="button" href="#" id="exampleButton">Example button</button>
         </div>
     </div>
-</f:for>
+</div>
