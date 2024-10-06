@@ -1,0 +1,12 @@
+page {
+  10 {
+    dataProcessing {
+      20 = menu
+      20 {
+        as = footerMenu
+        special = directory
+        special.value = {$mySitepackage.footerMenuFolderUid}
+      }
+    }
+  }
+}

@@ -7,6 +7,9 @@ categories:
   mySitepackage.layout:
     label: 'Layout'
     parent: mySitepackage
+  mySitepackage.pages:
+    label: 'Pages'
+    parent: mySitepackage
   mySitepackage.seo:
     label: 'SEO settings'
     parent: mySitepackage
@@ -39,3 +42,10 @@ settings:
     category: mySitepackage.seo
     type: string
     default: 'EXT:site_package/Resources/Public/Icons/favicon.ico'
+
+  mySitepackage.footerMenuFolderUid:
+    label: 'Footer menu starting point'
+    description: 'Folder in the page tree, which contains all pages that should be displayed in the footer menu.'
+    category: mySitepackage.pages
+    type: string
+    default: 2
