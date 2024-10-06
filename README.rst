@@ -16,6 +16,6 @@ control. Despite the fact that TYPO3 supports several methods of
 implementing websites, this approach is a very flexible and
 professional way.
 
-:Repository:      https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code
+:Repository:      https://github.com/TYPO3-Documentation/site_package
 :Belongs to:      https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage
 :Published at:    https://docs.typo3.org/typo3cms/SitePackageTutorial/
