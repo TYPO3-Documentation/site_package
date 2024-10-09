@@ -1,5 +1,0 @@
-name: t3docs/site-package
-label: Example site package set
-dependencies:
-  - typo3/fluid-styled-content
-  - typo3/fluid-styled-content-css
