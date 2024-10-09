@@ -1,0 +1,10 @@
+page = PAGE
+page {
+    10 = PAGEVIEW
+    10 {
+        paths {
+            100 = EXT:site_package/Resources/Private/Templates/
+        }
+    }
+}
+
