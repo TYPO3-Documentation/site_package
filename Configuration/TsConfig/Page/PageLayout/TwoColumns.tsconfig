@@ -1,0 +1,42 @@
+mod.web_layout.BackendLayouts {
+  TwoColumns {
+    title = Two Columns
+    icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/twoColumns.svg
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Jumbotron
+                colspan = 2
+                colPos = 1
+                identifier = jumbotron
+                slideMode = slide
+              }
+            }
+          }
+
+          2 {
+            columns {
+              1 {
+                name = Main Content
+                colPos = 0
+                identifier = main
+              }
+
+              2 {
+                name = Sidebar
+                colPos = 2
+                identifier = sidebar
+                slideMode = collectReverse
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

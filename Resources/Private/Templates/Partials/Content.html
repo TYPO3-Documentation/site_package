@@ -1,0 +1,9 @@
+<f:for each="{records}" as="record">
+    <div class="container">
+        <f:cObject
+            typoscriptObjectPath="tt_content.{record.CType}"
+            data="{record}"
+            table="tt_content"
+        />
+    </div>
+</f:for>

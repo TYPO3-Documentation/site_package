@@ -4,5 +4,9 @@ page {
     paths {
       0 = EXT:site_package/Resources/Private/Templates/
     }
+    dataProcessing {
+      # makes content elements available as {content} in Fluid template
+      10 = page-content
+    }
   }
 }
