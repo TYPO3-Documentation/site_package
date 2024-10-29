@@ -3,8 +3,8 @@
 	"type": "typo3-cms-extension",
 	"description": "Example site package from the site package tutorial",
 	"require": {
-		"typo3/cms-core": "^13.3.0|dev-main",
-		"typo3/cms-fluid-styled-content": "^13.3.0|dev-main"
+		"typo3/cms-core": "^13.4|dev-main",
+		"typo3/cms-fluid-styled-content": "^13.4|dev-main"
 	},
 	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
 	"license": "MIT",
