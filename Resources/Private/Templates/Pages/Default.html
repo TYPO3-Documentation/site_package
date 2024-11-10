@@ -1,7 +1,7 @@
 <f:layout name="Layout"/>
 <f:section name="Main">
 
-    <f:render partial="Jumbotron" arguments="{records: content.jumbotron.records}"/>
+    <f:render partial="Jumbotron" arguments="{_all}"/>
 
     <div class="container">
         <f:render partial="Content" arguments="{records: content.main.records}"/>
