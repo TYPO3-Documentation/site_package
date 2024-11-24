@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-11-24T18:55:27+00:00" product-name="t3docs/jumbotron">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Jumbotron</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Description for Content Element t3docs/jumbotron</source>
+			</trans-unit>
+			<trans-unit id="button_text.label" resname="button_text.label">
+				<source>button_text</source>
+			</trans-unit>
+			<trans-unit id="button_link.label" resname="button_link.label">
+				<source>button_link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

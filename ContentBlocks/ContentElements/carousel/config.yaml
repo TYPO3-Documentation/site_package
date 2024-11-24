@@ -1,0 +1,17 @@
+name: t3docs/carousel
+typeName: t3docs_carousel
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: carousel_items
+    type: Collection
+    foreign_field: parentid
+    fields:
+      - identifier: image
+        type: File
+      - identifier: header
+        type: Text
+      - identifier: description
+        type: Textarea
+        enableRichtext: true
