@@ -1,4 +1,4 @@
-// Part 1: PAGEVIEW section
+page = PAGE
 page {
   10 = PAGEVIEW
   10 {
