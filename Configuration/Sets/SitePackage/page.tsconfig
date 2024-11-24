@@ -1,1 +1,1 @@
-@import 'EXT:site_package/Configuration/TsConfig/Page/PageLayout/*.tsconfig'
+@import './PageTSconfig/PageLayout/*.tsconfig'

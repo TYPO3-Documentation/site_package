@@ -1,8 +1,0 @@
-page {
-  10 = PAGEVIEW
-  10 {
-    dataProcessing {
-      10 = page-content
-    }
-  }
-}
