@@ -7,13 +7,13 @@
 				<source>Jumbotron</source>
 			</trans-unit>
 			<trans-unit id="description" resname="description">
-				<source>Description for Content Element t3docs/jumbotron</source>
+				<source>Call to action area with button</source>
 			</trans-unit>
 			<trans-unit id="button_text.label" resname="button_text.label">
-				<source>button_text</source>
+				<source>Button Text</source>
 			</trans-unit>
 			<trans-unit id="button_link.label" resname="button_link.label">
-				<source>button_link</source>
+				<source>Button Link</source>
 			</trans-unit>
 		</body>
 	</file>
