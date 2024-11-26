@@ -1,0 +1,12 @@
+<f:asset.css identifier="content-block-t3docs-t3docs/carousel-be" href="{cb:assetPath()}/preview.css"/>
+
+<div class="row">
+    <f:for each="{data.carousel_items}" as="item" iteration="iteration">
+        <div class="col">
+            <f:for each="{item.image}" as="image" iteration="iteration">
+                <f:image image="{image}" width="100"/><br/>
+            </f:for>
+            {item.header}
+        </div>
+    </f:for>
+</div>
