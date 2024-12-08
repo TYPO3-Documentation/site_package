@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-12-08UTC07:23:120">
+        <header>
+            <authorName>TYPO3 Documentation Team</authorName>
+            <authorEmail>lina.wolf@typo3.org</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.subpage">
+                <source>Subpage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.stage">
+                <source>Stage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.right">
+                <source>Right</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

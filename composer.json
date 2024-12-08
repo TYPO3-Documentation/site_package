@@ -1,23 +1,26 @@
 {
-	"name": "t3docs/site-package",
-	"type": "typo3-cms-extension",
-	"description": "Example site package from the site package tutorial",
-	"require": {
-		"friendsoftypo3/content-blocks": "^1.0",
-		"typo3/cms-core": "^13.4|dev-main",
-		"typo3/cms-fluid-styled-content": "^13.4|dev-main"
-	},
-	"homepage": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code",
-	"license": "MIT",
-	"support": {
-		"issues": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage-Code/issues"
-	},
-	"extra": {
-		"typo3/cms": {
-			"extension-key": "site_package"
-		},
-		"branch-alias": {
-			"dev-master": "13.0.x-dev"
-		}
-	}
+    "name": "t3docs/site-package",
+    "type": "typo3-cms-extension",
+    "description": "This site package is an example used to understand the TYPO3 Site Package Tutorial",
+    "homepage": "https://docs.typo3.org/permalink/t3sitepackage:start@13.4",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4"
+    },
+    "suggest": {
+        "friendsoftypo3/content-blocks": "Allows to create custom content elements. "
+    },
+    "autoload": {
+        "psr-4": {
+            "T3docs\\SitePackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "site_package"
+        }
+    }
 }
