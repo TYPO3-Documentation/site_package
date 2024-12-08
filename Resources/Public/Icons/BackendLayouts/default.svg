@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="86" height="128"><path fill="#FFF" d="M0 0h86v128H0z"/><path fill="#333" d="M2 2h82v16H2zm0 28h82v68H2zm0 80h26v16H2zm28 0h26v16H30zm28 0h26v16H58zM2 20h82v8H2zm0 80h82v8H2z"/></svg>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="300"
+    height="400"
+    viewBox="0 0 300 400"
+    style="border: 1px solid #ccc; background: #000; "
+>
+    <!-- Stage Area -->
+    <rect x="10" y="10" width="280" height="100" fill="#e3e3e3" rx="5" />
+
+    <!-- Main Content Area -->
+    <rect x="10" y="120" width="280" height="270" fill="#f5f5f5" rx="5" />
+</svg>

@@ -3,8 +3,8 @@ page {
   10 = PAGEVIEW
   10 {
     paths {
-      0 = EXT:site_package/Resources/Private/Templates/
-      10 = {$mySitepackage.template_path}
+      0 = EXT:site_package/Resources/Private/PageView/
+      10 = {$SitePackage.template_path}
     }
 
     dataProcessing {
@@ -12,4 +12,5 @@ page {
       10 = page-content
     }
   }
+  shortcutIcon = {$SitePackage.favicon}
 }

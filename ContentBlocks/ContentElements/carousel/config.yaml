@@ -1,5 +1,5 @@
-name: t3docs/carousel
-typeName: t3docs_carousel
+name: site-package/carousel
+typeName: site_package_carousel
 group: default
 prefixFields: true
 prefixType: full

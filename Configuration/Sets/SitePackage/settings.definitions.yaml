@@ -1,41 +1,38 @@
 categories:
-  mySitepackage:
-    label: 'My Sitepackage'
-  mySitepackage.templates:
+  SitePackage:
+    label: 'Site Package'
+  SitePackage.templates:
     label: 'Templates'
-    parent: mySitepackage
-  mySitepackage.layout:
+    parent: SitePackage
+  SitePackage.layout:
     label: 'Layout'
-    parent: mySitepackage
-  mySitepackage.seo:
-    label: 'SEO settings'
-    parent: mySitepackage
+    parent: SitePackage
 
 settings:
-  mySitepackage.template_path:
-    label: 'Template path'
-    category: mySitepackage.templates
-    description: 'Path to the templates of the site package.'
+  SitePackage.template_path:
+    label: 'Page template path'
+    category: SitePackage.templates
+    description: 'Path to the templates of the Site Package.'
     type: string
     default: 'EXT:site_package/Resources/Private/Templates/'
 
-  mySitepackage.logo:
+  SitePackage.logo:
     label: 'Logo'
-    category: mySitepackage.layout
-    description: 'Path to the logo of the site package.'
+    category: SitePackage.layout
+    description: 'Path to the logo of Site Package.'
     type: string
     default: 'EXT:site_package/Resources/Public/Images/logo.svg'
 
-  mySitepackage.logo-alt:
+  SitePackage.logo-alt:
     label: 'Logo Alt text'
-    category: mySitepackage.layout
+    category: SitePackage.layout
     description: 'Alternative text of the logo for the visually impaired'
     type: string
     default: 'Logo'
 
-  mySitepackage.favicon:
+  SitePackage.favicon:
     label: 'Favicon'
     description: 'This icon is displayed in search engine results and in the browser tab'
-    category: mySitepackage.seo
+    category: SitePackage.layout
     type: string
     default: 'EXT:site_package/Resources/Public/Icons/favicon.ico'

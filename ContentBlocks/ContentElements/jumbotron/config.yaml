@@ -1,5 +1,5 @@
-name: t3docs/jumbotron
-typeName: t3docs_jumbotron
+name: site-package/jumbotron
+typeName: site_package_jumbotron
 group: default
 prefixFields: true
 prefixType: full
