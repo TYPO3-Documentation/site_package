@@ -35,12 +35,18 @@ jobs:
         run: |
           NEW_BRANCH="auto/sitepackage-update-$(date +%s)"
           echo "NEW_BRANCH=$NEW_BRANCH" >> $GITHUB_ENV
+          echo "New branch name: $NEW_BRANCH" # Debug line
         shell: bash
 
       - name: Run Generate Site Package Script
         run: |
           chmod +x Build/DownloadSitePackage/generate_sitepackage.sh
           ./Build/DownloadSitePackage/generate_sitepackage.sh
+
+      - name: Debug Changes
+        run: |
+          git status
+          git diff
 
       - name: Check for Changes
         run: |
@@ -51,13 +57,19 @@ jobs:
 
       - name: Create a New Branch for Changes
         run: |
+          echo "Using branch: ${{ env.NEW_BRANCH }}"
           git checkout -b ${{ env.NEW_BRANCH }}
           git add .
           git commit -m "${{ env.COMMIT_MESSAGE }}"
 
       - name: Push Changes to New Branch
         run: |
+          echo "Pushing to remote branch: ${{ env.NEW_BRANCH }}"
           git push --set-upstream origin ${{ env.NEW_BRANCH }}
+
+      - name: Verify Branch
+        run: |
+          git branch -r
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
