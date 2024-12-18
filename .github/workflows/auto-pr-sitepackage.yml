@@ -35,7 +35,7 @@ jobs:
         run: |
           NEW_BRANCH="auto/sitepackage-update-$(date +%s)"
           echo "NEW_BRANCH=$NEW_BRANCH" >> $GITHUB_ENV
-          echo "New branch name: $NEW_BRANCH" # Debug line
+          echo "New branch name: $NEW_BRANCH"
         shell: bash
 
       - name: Run Generate Site Package Script
@@ -43,23 +43,17 @@ jobs:
           chmod +x Build/DownloadSitePackage/generate_sitepackage.sh
           ./Build/DownloadSitePackage/generate_sitepackage.sh
 
-      - name: Debug Changes
+      - name: Debug Changes Before Commit
         run: |
-          git status
+          git status --short
           git diff
-
-      - name: Check for Changes
-        run: |
-          if git diff --quiet; then
-            echo "No changes detected, skipping PR creation."
-            exit 0
-          fi
 
       - name: Create a New Branch for Changes
         run: |
-          echo "Using branch: ${{ env.NEW_BRANCH }}"
           git checkout -b ${{ env.NEW_BRANCH }}
-          git add .
+          git add . # Stage all changes
+          git status --short # Verify that files are staged properly
+          git diff --cached # Show the changes that will be committed
           git commit -m "${{ env.COMMIT_MESSAGE }}"
 
       - name: Push Changes to New Branch
@@ -75,7 +69,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ env.NEW_BRANCH }} # Source branch (newly created branch)
-          base: ${{ env.BASE_BRANCH }} # Target branch (main or production branch)
+          source-branch: ${{ env.NEW_BRANCH }} # Source branch (newly created branch)
+          target-branch: ${{ env.BASE_BRANCH }} # Target branch (main or production branch)
           title: ${{ env.PR_TITLE }}
           body: ${{ env.PR_BODY }}
