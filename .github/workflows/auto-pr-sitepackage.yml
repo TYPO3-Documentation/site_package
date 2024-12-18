@@ -37,7 +37,7 @@ jobs:
 
       - name: Run Generate Site Package Script
         run: |
-          git checkout -b ${{ env.NEW_BRANCH }}
+          # git checkout -b ${{ env.NEW_BRANCH }}
           chmod +x Build/DownloadSitePackage/generate_sitepackage.sh
           ./Build/DownloadSitePackage/generate_sitepackage.sh
           git diff --exit-code || echo "FIX_NEEDED=true" >> $GITHUB_ENV
@@ -49,15 +49,15 @@ jobs:
           git status --short # Verify that files are staged properly
           git diff --cached # Show the changes that will be committed
           git commit -m "${{ env.COMMIT_MESSAGE }}"
-          echo "Pushing to remote branch: ${{ env.NEW_BRANCH }}"
-          git push --set-upstream origin ${{ env.NEW_BRANCH }}
+          # echo "Pushing to remote branch: ${{ env.NEW_BRANCH }}"
+          # git push --set-upstream origin ${{ env.NEW_BRANCH }}
 
       - name: Create Pull Request
         if: env.FIX_NEEDED == 'true'
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          source-branch: ${{ env.NEW_BRANCH }} # Source branch (newly created branch)
-          target-branch: ${{ env.BASE_BRANCH }} # Target branch (main or production branch)
+          branch: ${{ env.NEW_BRANCH }} # Source branch (newly created branch)
+          base: ${{ env.BASE_BRANCH }} # Target branch (main or production branch)
           title: ${{ env.PR_TITLE }}
           body: ${{ env.PR_BODY }}
