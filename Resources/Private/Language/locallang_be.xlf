@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2024-12-08UTC07:23:120">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-12-18UTC13:27:000">
         <header>
             <authorName>TYPO3 Documentation Team</authorName>
-            <authorEmail>lina.wolf@typo3.org</authorEmail>
+            <authorEmail>j.doe@example.org</authorEmail>
         </header>
         <body>
             <trans-unit id="backend_layout.default">
