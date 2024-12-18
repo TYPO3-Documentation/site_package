@@ -51,7 +51,7 @@ jobs:
       - name: Create a New Branch for Changes
         run: |
           git checkout -b ${{ env.NEW_BRANCH }}
-          git add . # Stage all changes
+          git add --all # Stage all changes
           git status --short # Verify that files are staged properly
           git diff --cached # Show the changes that will be committed
           git commit -m "${{ env.COMMIT_MESSAGE }}"
