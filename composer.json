@@ -1,7 +1,7 @@
 {
     "name": "t3docs/site-package",
     "type": "typo3-cms-extension",
-    "description": "This site package is an example used to understand the TYPO3 Site Package Tutorial.",
+    "description": "This site package is an example used to understand the TYPO3 Site Package Tutorial",
     "homepage": "https://docs.typo3.org/permalink/t3sitepackage:start",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
