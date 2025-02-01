@@ -590,8 +590,8 @@
 				<field index="mount_pid_ol" type="integer">0</field>
 				<field index="module"></field>
 				<field index="l18n_cfg" type="integer">0</field>
-				<field index="backend_layout">pagets__Default</field>
-				<field index="backend_layout_next_level">pagets__Subpage</field>
+				<field index="backend_layout">pagets__default</field>
+				<field index="backend_layout_next_level">pagets__subpage</field>
 				<field index="tsconfig_includes"></field>
 				<field index="seo_title"></field>
 				<field index="no_index" type="integer">0</field>
