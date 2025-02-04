@@ -1,6 +1,6 @@
 name: site-package/jumbotron
 typeName: site_package_jumbotron
-group: default
+group: site_package
 prefixFields: true
 prefixType: full
 fields:

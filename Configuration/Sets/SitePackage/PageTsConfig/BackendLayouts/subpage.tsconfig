@@ -4,7 +4,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            Subpage {
+            subpage {
                 title = LLL:EXT:site_package/Resources/Private/Language/locallang_be.xlf:backend_layout.subpage
                 config {
                     backend_layout {

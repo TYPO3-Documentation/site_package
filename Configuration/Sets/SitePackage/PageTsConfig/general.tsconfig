@@ -14,14 +14,17 @@ TCEFORM {
 }
 
 TCEMAIN {
-    pages {
-        # Pages will *not* have "(copy)" appended:
-        disablePrependAtCopy = 1
-        # Pages will *not* be hidden upon copy:
-        disableHideAtCopy = 1
-    }
-    tt_content {
-        # Content will *not* have "(copy)" appended:
-        disablePrependAtCopy = 1
+    table {
+        pages {
+            # Pages will *not* have "(copy)" appended:
+            disablePrependAtCopy = 1
+            # Pages will *not* be hidden upon copy:
+            disableHideAtCopy = 1
+        }
+
+        tt_content {
+            # Content will *not* have "(copy)" appended:
+            disablePrependAtCopy = 1
+        }
     }
 }
