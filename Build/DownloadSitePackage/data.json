@@ -1,6 +1,6 @@
 {
   "base_package": "site_package_tutorial",
-  "typo3_version": 13.4,
+  "typo3_version": 14.3,
   "title": "Site Package",
   "description": "This site package is an example used to understand the TYPO3 Site Package Tutorial. ",
   "repository_url": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage",
