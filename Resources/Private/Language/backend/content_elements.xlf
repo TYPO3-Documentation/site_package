@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-12-01UTC02:44:440">
+        <body>
+            <trans-unit id="group.site_package">
+                <source>Site Package elements</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
