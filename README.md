@@ -56,7 +56,7 @@ vendor/bin/typo3 extension:setup
 If automatic loading fails you can also try to use the import command:
 
 ```
-ddev typo3 impexp:import EXT:my_site_package/Initialisation/data.xml
+ddev typo3 impexp:import EXT:site_package/Initialisation/data.xml
 ```
 
 ## Include the Set manually
