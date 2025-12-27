@@ -10,9 +10,9 @@
         "TYPO3 CMS"
     ],
     "require": {
-        "typo3/cms-core": "^14.1",
-        "typo3/cms-rte-ckeditor": "^14.1",
-        "typo3/cms-fluid-styled-content": "^14.1"
+        "typo3/cms-core": "^14.0",
+        "typo3/cms-rte-ckeditor": "^14.0",
+        "typo3/cms-fluid-styled-content": "^14.0"
     },
     "suggest": {
         "friendsoftypo3/content-blocks": "Allows to create custom content elements. "
