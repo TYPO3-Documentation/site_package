@@ -3,7 +3,7 @@
 For the custom content blocks to be displayed, the extension needs to be installed:
 
 ```
-ddev composer install friendsoftypo3/content-blocks
+ddev composer require friendsoftypo3/content-blocks
 ```
 
 ## Kickstarting a new content block
