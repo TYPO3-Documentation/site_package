@@ -1,0 +1,23 @@
+name: site-package/jumbotron
+typeName: site_package_jumbotron
+group: site_package
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
+    identifier: button_text
+    type: Text
+    default: 'Read more'
+    min: 4
+    max: 15
+  -
+    identifier: button_link
+    type: Link
+    required: true
