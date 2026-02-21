@@ -59,16 +59,18 @@ If automatic loading fails you can also try to use the import command:
 ddev typo3 impexp:import EXT:site_package/Initialisation/data.xml
 ```
 
-## Include the Set manually
+## Include the Site set in your Site configuration
 
-If you decide not to load the Example data, the Set of this Site Package needs to be included manually:
+If not done by the extension setup or import command, you can copy the `Initialisation/Site/main`
+folder to your [Site configuration storage](https://docs.typo3.org/permalink/t3coreapi:site-storage).
 
-Include the Set "Site Package" in your site configuration.
-See also: [Create a basic site set](https://docs.typo3.org/permalink/t3sitepackage:minimal-extension-siteset).
-
-You can also edit the file `config/sites/mysite/config.yaml` and include the following lines:
+If you want to use an existing Site configuration, set the Site set "Site Package" as dependency.
+You can do this in backend module "Sites -> Setup" or edit the file `config/sites/mysite/config.yaml`
+and include the following lines:
 
 ```
 dependencies:
   - t3docs/site-package
 ```
+
+See also: [Create a basic site set](https://docs.typo3.org/permalink/t3sitepackage:minimal-extension-siteset).
