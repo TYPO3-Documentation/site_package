@@ -1,7 +1,3 @@
 <f:for each="{records}" as="record">
-    <f:cObject
-        typoscriptObjectPath="{record.mainType}"
-        data="{record}"
-        table="{record.mainType}"
-    />
+    <f:render.record record="{record}" />
 </f:for>

@@ -1,9 +1,5 @@
 <f:for each="{content.stage.records}" as="record">
     <div class="container">
-        <f:cObject
-            typoscriptObjectPath="{record.mainType}"
-            data="{record}"
-            table="{record.mainType}"
-        />
+        <f:render.record record="{record}" />
     </div>
 </f:for>
