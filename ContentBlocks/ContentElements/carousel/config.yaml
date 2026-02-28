@@ -2,7 +2,6 @@ name: site-package/carousel
 typeName: site_package_carousel
 group: site_package
 prefixFields: true
-prefixType: full
 fields:
   - identifier: carousel_items
     type: Collection
