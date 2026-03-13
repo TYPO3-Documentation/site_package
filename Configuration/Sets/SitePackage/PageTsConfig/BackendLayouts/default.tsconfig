@@ -18,6 +18,7 @@ mod {
                                         colPos = 1
                                         identifier = stage
                                         slideMode = slide
+                                        allowedContentTypes = site_package_jumbotron,text
                                     }
                                 }
                             }
@@ -27,6 +28,7 @@ mod {
                                         name = LLL:site_package.backend.layouts:column.normal
                                         colPos = 0
                                         identifier = main
+                                        disallowedContentTypes = site_package_jumbotron
                                     }
                                 }
                             }
