@@ -14,7 +14,7 @@ fields:
         type: File
         allowed: common-image-types
         minitems: 1
-        relationship: manyToOne
+        relationship: oneToOne
       - identifier: header
         type: Text
       - identifier: description
