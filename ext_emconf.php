@@ -7,8 +7,8 @@ $EM_CONF[$_EXTKEY] = [
     "category" => "templates",
     "constraints" => [
         "depends" => [
-            "typo3" => "14.0.0-14.3.99",
-            "fluid_styled_content" => "14.0.0-14.3.99",
+            "typo3" => "14.3.0-14.3.99",
+            "fluid_styled_content" => "14.3.0-14.3.99",
             "content_blocks" => "2.0.0-2.99.99",
         ],
         "conflicts" => [],
